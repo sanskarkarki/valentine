@@ -58,6 +58,18 @@ function startCountdown(){
  },1000);
 }
 
+function openModal(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imageModal").classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  document.getElementById("imageModal").classList.add("hidden");
+  document.body.style.overflow = "auto";
+}
+
+
 let autoOpened=false;
 function autoOpenGift(){
  if(!autoOpened){autoOpened=true;setTimeout(()=>showPage("menu"),1200);}
