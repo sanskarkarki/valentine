@@ -1,0 +1,18 @@
+body{margin:0;font-family:Poppins,sans-serif;background:#ffe6ec;display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden}
+.card{background:#fff;width:92%;max-width:400px;padding:30px;border-radius:25px;text-align:center;z-index:10;position:relative;animation:fadeSlide .6s ease}
+.hidden{display:none!important}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+button{background:#ff4d6d;color:#fff;border:none;padding:12px 20px;border-radius:30px;margin:10px;cursor:pointer;transition:transform .2s}
+button:hover{transform:scale(1.05)}
+.back{background:none;color:#ff4d6d}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery img{width:100%;border-radius:12px;cursor:pointer}
+#musicBtn{position:fixed;top:15px;right:15px;z-index:20}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;justify-content:center;align-items:center;z-index:50}
+.modal.hidden{display:none;pointer-events:none}
+.modal img{max-width:90%;border-radius:15px}
+.confetti{position:fixed;top:0;pointer-events:none;animation:fall 3s linear forwards;z-index:200}
+@keyframes fall{to{transform:translateY(100vh) rotate(360deg);opacity:0}}
+.finalText{font-size:26px;animation:glowIn 2s ease forwards}
+@keyframes glowIn{from{opacity:0}to{opacity:1;text-shadow:0 0 15px rgba(255,77,109,.6)}}
